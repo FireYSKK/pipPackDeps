@@ -1,0 +1,287 @@
+digraph "xarray requirements" {
+	xarray [label=xarray color=black fillcolor=green style=filled]
+	seaborn [label=seaborn color=black fillcolor=aliceblue style=filled]
+	xarray -> seaborn
+	bottleneck [label=bottleneck color=black fillcolor=aliceblue style=filled]
+	xarray -> bottleneck
+	h5netcdf [label=h5netcdf color=black fillcolor=aliceblue style=filled]
+	xarray -> h5netcdf
+	pandas [label=pandas color=black fillcolor=aliceblue style=filled]
+	xarray -> pandas
+	matplotlib [label=matplotlib color=black fillcolor=aliceblue style=filled]
+	xarray -> matplotlib
+	"nc-time-axis" [label="nc-time-axis" color=black fillcolor=aliceblue style=filled]
+	xarray -> "nc-time-axis"
+	pydap [label=pydap color=black fillcolor=aliceblue style=filled]
+	xarray -> pydap
+	pooch [label=pooch color=black fillcolor=aliceblue style=filled]
+	xarray -> pooch
+	packaging [label=packaging color=black fillcolor=aliceblue style=filled]
+	xarray -> packaging
+	"jupyter-client" [label="jupyter-client" color=black fillcolor=aliceblue style=filled]
+	xarray -> "jupyter-client"
+	cftime [label=cftime color=black fillcolor=aliceblue style=filled]
+	xarray -> cftime
+	zarr [label=zarr color=black fillcolor=aliceblue style=filled]
+	xarray -> zarr
+	numpy [label=numpy color=black fillcolor=aliceblue style=filled]
+	xarray -> numpy
+	cfgrib [label=cfgrib color=black fillcolor=aliceblue style=filled]
+	xarray -> cfgrib
+	flox [label=flox color=black fillcolor=aliceblue style=filled]
+	xarray -> flox
+	dask [label=dask color=black fillcolor=aliceblue style=filled]
+	xarray -> dask
+	netcdf4 [label=netcdf4 color=black fillcolor=aliceblue style=filled]
+	xarray -> netcdf4
+	rasterio [label=rasterio color=black fillcolor=aliceblue style=filled]
+	xarray -> rasterio
+	ipykernel [label=ipykernel color=black fillcolor=aliceblue style=filled]
+	xarray -> ipykernel
+	numpy [label=numpy color=black fillcolor=antiquewhite style=filled]
+	seaborn -> numpy
+	statsmodels [label=statsmodels color=black fillcolor=antiquewhite style=filled]
+	seaborn -> statsmodels
+	typing_extensions [label=typing_extensions color=black fillcolor=antiquewhite style=filled]
+	seaborn -> typing_extensions
+	matplotlib [label=matplotlib color=black fillcolor=antiquewhite style=filled]
+	seaborn -> matplotlib
+	pandas [label=pandas color=black fillcolor=antiquewhite style=filled]
+	seaborn -> pandas
+	"python-dateutil" [label="python-dateutil" color=black fillcolor=aqua style=filled]
+	pandas -> "python-dateutil"
+	pytz [label=pytz color=black fillcolor=aqua style=filled]
+	pandas -> pytz
+	gitpython [label=gitpython color=black fillcolor=blue style=filled]
+	bottleneck -> gitpython
+	numpydoc [label=numpydoc color=black fillcolor=blue style=filled]
+	bottleneck -> numpydoc
+	"typing-extensions" [label="typing-extensions" color=black fillcolor=blueviolet style=filled]
+	gitpython -> "typing-extensions"
+	gitdb [label=gitdb color=black fillcolor=blueviolet style=filled]
+	gitpython -> gitdb
+	smmap [label=smmap color=black fillcolor=chartreuse style=filled]
+	gitdb -> smmap
+	jinja2 [label=jinja2 color=black fillcolor=chocolate style=filled]
+	numpydoc -> jinja2
+	babel [label=babel color=black fillcolor=crimson style=filled]
+	jinja2 -> babel
+	markupsafe [label=markupsafe color=black fillcolor=crimson style=filled]
+	jinja2 -> markupsafe
+	h5py [label=h5py color=black fillcolor=fuchsia style=filled]
+	h5netcdf -> h5py
+	packaging [label=packaging color=black fillcolor=fuchsia style=filled]
+	h5netcdf -> packaging
+	"pre-commit" [label="pre-commit" color=black fillcolor=hotpink style=filled]
+	"nc-time-axis" -> "pre-commit"
+	codecov [label=codecov color=black fillcolor=hotpink style=filled]
+	"nc-time-axis" -> codecov
+	cftime [label=cftime color=black fillcolor=hotpink style=filled]
+	"nc-time-axis" -> cftime
+	toml [label=toml color=black fillcolor=magenta style=filled]
+	"pre-commit" -> toml
+	identify [label=identify color=black fillcolor=magenta style=filled]
+	"pre-commit" -> identify
+	nodeenv [label=nodeenv color=black fillcolor=magenta style=filled]
+	"pre-commit" -> nodeenv
+	pyyaml [label=pyyaml color=black fillcolor=magenta style=filled]
+	"pre-commit" -> pyyaml
+	cfgv [label=cfgv color=black fillcolor=magenta style=filled]
+	"pre-commit" -> cfgv
+	"importlib-metadata" [label="importlib-metadata" color=black fillcolor=magenta style=filled]
+	"pre-commit" -> "importlib-metadata"
+	ukkonen [label=ukkonen color=black fillcolor=orange style=filled]
+	identify -> ukkonen
+	cffi [label=cffi color=black fillcolor=red style=filled]
+	ukkonen -> cffi
+	pycparser [label=pycparser color=black fillcolor=pink style=filled]
+	cffi -> pycparser
+	zipp [label=zipp color=black fillcolor=aliceblue style=filled]
+	"importlib-metadata" -> zipp
+	"jaraco.tidelift" [label="jaraco.tidelift" color=black fillcolor=aliceblue style=filled]
+	"importlib-metadata" -> "jaraco.tidelift"
+	flake8 [label=flake8 color=black fillcolor=aliceblue style=filled]
+	"importlib-metadata" -> flake8
+	"rst.linker" [label="rst.linker" color=black fillcolor=aliceblue style=filled]
+	"importlib-metadata" -> "rst.linker"
+	"jaraco.packaging" [label="jaraco.packaging" color=black fillcolor=aliceblue style=filled]
+	"importlib-metadata" -> "jaraco.packaging"
+	"importlib-resources" [label="importlib-resources" color=black fillcolor=aliceblue style=filled]
+	"importlib-metadata" -> "importlib-resources"
+	pyfakefs [label=pyfakefs color=black fillcolor=aliceblue style=filled]
+	"importlib-metadata" -> pyfakefs
+	"flufl.flake8" [label="flufl.flake8" color=black fillcolor=aliceblue style=filled]
+	"importlib-metadata" -> "flufl.flake8"
+	"jaraco.tidelift" [label="jaraco.tidelift" color=black fillcolor=antiquewhite style=filled]
+	zipp -> "jaraco.tidelift"
+	flake8 [label=flake8 color=black fillcolor=antiquewhite style=filled]
+	zipp -> flake8
+	"rst.linker" [label="rst.linker" color=black fillcolor=antiquewhite style=filled]
+	zipp -> "rst.linker"
+	"jaraco.packaging" [label="jaraco.packaging" color=black fillcolor=antiquewhite style=filled]
+	zipp -> "jaraco.packaging"
+	"more-itertools" [label="more-itertools" color=black fillcolor=antiquewhite style=filled]
+	zipp -> "more-itertools"
+	"jaraco.functools" [label="jaraco.functools" color=black fillcolor=antiquewhite style=filled]
+	zipp -> "jaraco.functools"
+	"jaraco.itertools" [label="jaraco.itertools" color=black fillcolor=antiquewhite style=filled]
+	zipp -> "jaraco.itertools"
+	"func-timeout" [label="func-timeout" color=black fillcolor=antiquewhite style=filled]
+	zipp -> "func-timeout"
+	"types-docutils" [label="types-docutils" color=black fillcolor=aqua style=filled]
+	"jaraco.tidelift" -> "types-docutils"
+	"importlib-resources" [label="importlib-resources" color=black fillcolor=aqua style=filled]
+	"jaraco.tidelift" -> "importlib-resources"
+	keyring [label=keyring color=black fillcolor=aqua style=filled]
+	"jaraco.tidelift" -> keyring
+	"jaraco.packaging" [label="jaraco.packaging" color=black fillcolor=aqua style=filled]
+	"jaraco.tidelift" -> "jaraco.packaging"
+	"rst.linker" [label="rst.linker" color=black fillcolor=aqua style=filled]
+	"jaraco.tidelift" -> "rst.linker"
+	autocommand [label=autocommand color=black fillcolor=aqua style=filled]
+	"jaraco.tidelift" -> autocommand
+	"requests-toolbelt" [label="requests-toolbelt" color=black fillcolor=aqua style=filled]
+	"jaraco.tidelift" -> "requests-toolbelt"
+	flake8 [label=flake8 color=black fillcolor=aquamarine style=filled]
+	"importlib-resources" -> flake8
+	"rst.linker" [label="rst.linker" color=black fillcolor=aquamarine style=filled]
+	"importlib-resources" -> "rst.linker"
+	"jaraco.packaging" [label="jaraco.packaging" color=black fillcolor=aquamarine style=filled]
+	"importlib-resources" -> "jaraco.packaging"
+	pycodestyle [label=pycodestyle color=black fillcolor=blue style=filled]
+	flake8 -> pycodestyle
+	mccabe [label=mccabe color=black fillcolor=blue style=filled]
+	flake8 -> mccabe
+	pyflakes [label=pyflakes color=black fillcolor=blue style=filled]
+	flake8 -> pyflakes
+	path [label=path color=black fillcolor=blueviolet style=filled]
+	"rst.linker" -> path
+	"types-python-dateutil" [label="types-python-dateutil" color=black fillcolor=blueviolet style=filled]
+	"rst.linker" -> "types-python-dateutil"
+	"jaraco.packaging" [label="jaraco.packaging" color=black fillcolor=blueviolet style=filled]
+	"rst.linker" -> "jaraco.packaging"
+	"jaraco.packaging" [label="jaraco.packaging" color=black fillcolor=chartreuse style=filled]
+	path -> "jaraco.packaging"
+	appdirs [label=appdirs color=black fillcolor=chartreuse style=filled]
+	path -> appdirs
+	pygments [label=pygments color=black fillcolor=chartreuse style=filled]
+	path -> pygments
+	pywin32 [label=pywin32 color=black fillcolor=chartreuse style=filled]
+	path -> pywin32
+	build [label=build color=black fillcolor=chocolate style=filled]
+	"jaraco.packaging" -> build
+	colorama [label=colorama color=black fillcolor=crimson style=filled]
+	build -> colorama
+	filelock [label=filelock color=black fillcolor=crimson style=filled]
+	build -> filelock
+	tomli [label=tomli color=black fillcolor=crimson style=filled]
+	build -> tomli
+	coverage [label=coverage color=black fillcolor=cyan style=filled]
+	filelock -> coverage
+	covdefaults [label=covdefaults color=black fillcolor=cyan style=filled]
+	filelock -> covdefaults
+	tomli [label=tomli color=black fillcolor=fuchsia style=filled]
+	coverage -> tomli
+	secretstorage [label=secretstorage color=black fillcolor=hotpink style=filled]
+	keyring -> secretstorage
+	jeepney [label=jeepney color=black fillcolor=hotpink style=filled]
+	keyring -> jeepney
+	"pywin32-ctypes" [label="pywin32-ctypes" color=black fillcolor=hotpink style=filled]
+	keyring -> "pywin32-ctypes"
+	"jaraco.classes" [label="jaraco.classes" color=black fillcolor=hotpink style=filled]
+	keyring -> "jaraco.classes"
+	jeepney [label=jeepney color=black fillcolor=magenta style=filled]
+	secretstorage -> jeepney
+	cryptography [label=cryptography color=black fillcolor=magenta style=filled]
+	secretstorage -> cryptography
+	async_generator [label=async_generator color=black fillcolor=orange style=filled]
+	jeepney -> async_generator
+	trio [label=trio color=black fillcolor=orange style=filled]
+	jeepney -> trio
+	testpath [label=testpath color=black fillcolor=orange style=filled]
+	jeepney -> testpath
+	"async-timeout" [label="async-timeout" color=black fillcolor=orange style=filled]
+	jeepney -> "async-timeout"
+	exceptiongroup [label=exceptiongroup color=black fillcolor=red style=filled]
+	trio -> exceptiongroup
+	"async-generator" [label="async-generator" color=black fillcolor=red style=filled]
+	trio -> "async-generator"
+	sortedcontainers [label=sortedcontainers color=black fillcolor=red style=filled]
+	trio -> sortedcontainers
+	idna [label=idna color=black fillcolor=red style=filled]
+	trio -> idna
+	sniffio [label=sniffio color=black fillcolor=red style=filled]
+	trio -> sniffio
+	outcome [label=outcome color=black fillcolor=red style=filled]
+	trio -> outcome
+	"flake8-import-order" [label="flake8-import-order" color=black fillcolor=aqua style=filled]
+	cryptography -> "flake8-import-order"
+	pyenchant [label=pyenchant color=black fillcolor=aqua style=filled]
+	cryptography -> pyenchant
+	black [label=black color=black fillcolor=aqua style=filled]
+	cryptography -> black
+	"setuptools-rust" [label="setuptools-rust" color=black fillcolor=aqua style=filled]
+	cryptography -> "setuptools-rust"
+	bcrypt [label=bcrypt color=black fillcolor=aqua style=filled]
+	cryptography -> bcrypt
+	"pep8-naming" [label="pep8-naming" color=black fillcolor=aqua style=filled]
+	cryptography -> "pep8-naming"
+	iso8601 [label=iso8601 color=black fillcolor=aqua style=filled]
+	cryptography -> iso8601
+	pretend [label=pretend color=black fillcolor=aqua style=filled]
+	cryptography -> pretend
+	twine [label=twine color=black fillcolor=aqua style=filled]
+	cryptography -> twine
+	enum34 [label=enum34 color=black fillcolor=aquamarine style=filled]
+	"flake8-import-order" -> enum34
+	"typed-ast" [label="typed-ast" color=black fillcolor=blue style=filled]
+	black -> "typed-ast"
+	uvloop [label=uvloop color=black fillcolor=blue style=filled]
+	black -> uvloop
+	"mypy-extensions" [label="mypy-extensions" color=black fillcolor=blue style=filled]
+	black -> "mypy-extensions"
+	aiohttp [label=aiohttp color=black fillcolor=blue style=filled]
+	black -> aiohttp
+	pathspec [label=pathspec color=black fillcolor=blue style=filled]
+	black -> pathspec
+	"tokenize-rt" [label="tokenize-rt" color=black fillcolor=blue style=filled]
+	black -> "tokenize-rt"
+	click [label=click color=black fillcolor=blue style=filled]
+	black -> click
+	platformdirs [label=platformdirs color=black fillcolor=blue style=filled]
+	black -> platformdirs
+	psutil [label=psutil color=black fillcolor=blueviolet style=filled]
+	uvloop -> psutil
+	cython [label=cython color=black fillcolor=blueviolet style=filled]
+	uvloop -> cython
+	aiohttp [label=aiohttp color=black fillcolor=blueviolet style=filled]
+	uvloop -> aiohttp
+	pyopenssl [label=pyopenssl color=black fillcolor=blueviolet style=filled]
+	uvloop -> pyopenssl
+	ipaddress [label=ipaddress color=black fillcolor=chartreuse style=filled]
+	psutil -> ipaddress
+	wmi [label=wmi color=black fillcolor=chartreuse style=filled]
+	psutil -> wmi
+	mock [label=mock color=black fillcolor=chartreuse style=filled]
+	psutil -> mock
+	twine [label=twine color=black fillcolor=chocolate style=filled]
+	wmi -> twine
+	"readme-renderer" [label="readme-renderer" color=black fillcolor=crimson style=filled]
+	twine -> "readme-renderer"
+	rfc3986 [label=rfc3986 color=black fillcolor=crimson style=filled]
+	twine -> rfc3986
+	urllib3 [label=urllib3 color=black fillcolor=crimson style=filled]
+	twine -> urllib3
+	"requests-toolbelt" [label="requests-toolbelt" color=black fillcolor=crimson style=filled]
+	twine -> "requests-toolbelt"
+	pkginfo [label=pkginfo color=black fillcolor=crimson style=filled]
+	twine -> pkginfo
+	requests [label=requests color=black fillcolor=crimson style=filled]
+	twine -> requests
+	docutils [label=docutils color=black fillcolor=cyan style=filled]
+	"readme-renderer" -> docutils
+	bleach [label=bleach color=black fillcolor=cyan style=filled]
+	"readme-renderer" -> bleach
+	cmarkgfm [label=cmarkgfm color=black fillcolor=cyan style=filled]
+	"readme-renderer" -> cmarkgfm
+}

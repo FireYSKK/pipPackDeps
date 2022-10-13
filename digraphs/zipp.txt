@@ -1,0 +1,421 @@
+digraph "zipp requirements" {
+	zipp [label=zipp color=black fillcolor=green style=filled]
+	"jaraco.tidelift" [label="jaraco.tidelift" color=black fillcolor=aliceblue style=filled]
+	zipp -> "jaraco.tidelift"
+	"jaraco.packaging" [label="jaraco.packaging" color=black fillcolor=aliceblue style=filled]
+	zipp -> "jaraco.packaging"
+	"jaraco.itertools" [label="jaraco.itertools" color=black fillcolor=aliceblue style=filled]
+	zipp -> "jaraco.itertools"
+	flake8 [label=flake8 color=black fillcolor=aliceblue style=filled]
+	zipp -> flake8
+	"more-itertools" [label="more-itertools" color=black fillcolor=aliceblue style=filled]
+	zipp -> "more-itertools"
+	"rst.linker" [label="rst.linker" color=black fillcolor=aliceblue style=filled]
+	zipp -> "rst.linker"
+	"func-timeout" [label="func-timeout" color=black fillcolor=aliceblue style=filled]
+	zipp -> "func-timeout"
+	"jaraco.functools" [label="jaraco.functools" color=black fillcolor=aliceblue style=filled]
+	zipp -> "jaraco.functools"
+	"jaraco.packaging" [label="jaraco.packaging" color=black fillcolor=antiquewhite style=filled]
+	"jaraco.tidelift" -> "jaraco.packaging"
+	"requests-toolbelt" [label="requests-toolbelt" color=black fillcolor=antiquewhite style=filled]
+	"jaraco.tidelift" -> "requests-toolbelt"
+	"importlib-resources" [label="importlib-resources" color=black fillcolor=antiquewhite style=filled]
+	"jaraco.tidelift" -> "importlib-resources"
+	"rst.linker" [label="rst.linker" color=black fillcolor=antiquewhite style=filled]
+	"jaraco.tidelift" -> "rst.linker"
+	"types-docutils" [label="types-docutils" color=black fillcolor=antiquewhite style=filled]
+	"jaraco.tidelift" -> "types-docutils"
+	autocommand [label=autocommand color=black fillcolor=antiquewhite style=filled]
+	"jaraco.tidelift" -> autocommand
+	keyring [label=keyring color=black fillcolor=antiquewhite style=filled]
+	"jaraco.tidelift" -> keyring
+	"importlib-metadata" [label="importlib-metadata" color=black fillcolor=deepskyblue style=filled]
+	"jaraco.packaging" -> "importlib-metadata"
+	flake8 [label=flake8 color=black fillcolor=deepskyblue style=filled]
+	"jaraco.packaging" -> flake8
+	build [label=build color=black fillcolor=deepskyblue style=filled]
+	"jaraco.packaging" -> build
+	"rst.linker" [label="rst.linker" color=black fillcolor=deepskyblue style=filled]
+	"jaraco.packaging" -> "rst.linker"
+	packaging [label=packaging color=black fillcolor=aquamarine style=filled]
+	"importlib-metadata" -> packaging
+	"typing-extensions" [label="typing-extensions" color=black fillcolor=aquamarine style=filled]
+	"importlib-metadata" -> "typing-extensions"
+	flake8 [label=flake8 color=black fillcolor=aquamarine style=filled]
+	"importlib-metadata" -> flake8
+	"importlib-resources" [label="importlib-resources" color=black fillcolor=aquamarine style=filled]
+	"importlib-metadata" -> "importlib-resources"
+	"rst.linker" [label="rst.linker" color=black fillcolor=aquamarine style=filled]
+	"importlib-metadata" -> "rst.linker"
+	"flufl.flake8" [label="flufl.flake8" color=black fillcolor=aquamarine style=filled]
+	"importlib-metadata" -> "flufl.flake8"
+	pyfakefs [label=pyfakefs color=black fillcolor=aquamarine style=filled]
+	"importlib-metadata" -> pyfakefs
+	pyflakes [label=pyflakes color=black fillcolor=blueviolet style=filled]
+	flake8 -> pyflakes
+	pycodestyle [label=pycodestyle color=black fillcolor=blueviolet style=filled]
+	flake8 -> pycodestyle
+	mccabe [label=mccabe color=black fillcolor=blueviolet style=filled]
+	flake8 -> mccabe
+	"rst.linker" [label="rst.linker" color=black fillcolor=chartreuse style=filled]
+	"importlib-resources" -> "rst.linker"
+	"types-python-dateutil" [label="types-python-dateutil" color=black fillcolor=chocolate style=filled]
+	"rst.linker" -> "types-python-dateutil"
+	"python-dateutil" [label="python-dateutil" color=black fillcolor=chocolate style=filled]
+	"rst.linker" -> "python-dateutil"
+	path [label=path color=black fillcolor=chocolate style=filled]
+	"rst.linker" -> path
+	pywin32 [label=pywin32 color=black fillcolor=cyan style=filled]
+	path -> pywin32
+	appdirs [label=appdirs color=black fillcolor=cyan style=filled]
+	path -> appdirs
+	pygments [label=pygments color=black fillcolor=cyan style=filled]
+	path -> pygments
+	colorama [label=colorama color=black fillcolor=gold style=filled]
+	build -> colorama
+	toml [label=toml color=black fillcolor=gold style=filled]
+	build -> toml
+	tomli [label=tomli color=black fillcolor=gold style=filled]
+	build -> tomli
+	filelock [label=filelock color=black fillcolor=gold style=filled]
+	build -> filelock
+	coverage [label=coverage color=black fillcolor=green style=filled]
+	filelock -> coverage
+	covdefaults [label=covdefaults color=black fillcolor=green style=filled]
+	filelock -> covdefaults
+	requests [label=requests color=black fillcolor=orange style=filled]
+	"requests-toolbelt" -> requests
+	pysocks [label=pysocks color=black fillcolor=red style=filled]
+	requests -> pysocks
+	certifi [label=certifi color=black fillcolor=red style=filled]
+	requests -> certifi
+	chardet [label=chardet color=black fillcolor=red style=filled]
+	requests -> chardet
+	urllib3 [label=urllib3 color=black fillcolor=red style=filled]
+	requests -> urllib3
+	idna [label=idna color=black fillcolor=red style=filled]
+	requests -> idna
+	"charset-normalizer" [label="charset-normalizer" color=black fillcolor=red style=filled]
+	requests -> "charset-normalizer"
+	ipaddress [label=ipaddress color=black fillcolor=pink style=filled]
+	urllib3 -> ipaddress
+	pyopenssl [label=pyopenssl color=black fillcolor=pink style=filled]
+	urllib3 -> pyopenssl
+	"urllib3-secure-extra" [label="urllib3-secure-extra" color=black fillcolor=pink style=filled]
+	urllib3 -> "urllib3-secure-extra"
+	brotlipy [label=brotlipy color=black fillcolor=pink style=filled]
+	urllib3 -> brotlipy
+	cryptography [label=cryptography color=black fillcolor=pink style=filled]
+	urllib3 -> cryptography
+	brotli [label=brotli color=black fillcolor=pink style=filled]
+	urllib3 -> brotli
+	brotlicffi [label=brotlicffi color=black fillcolor=pink style=filled]
+	urllib3 -> brotlicffi
+	idna [label=idna color=black fillcolor=pink style=filled]
+	urllib3 -> idna
+	pretend [label=pretend color=black fillcolor=yellow style=filled]
+	pyopenssl -> pretend
+	flaky [label=flaky color=black fillcolor=yellow style=filled]
+	pyopenssl -> flaky
+	cryptography [label=cryptography color=black fillcolor=yellow style=filled]
+	pyopenssl -> cryptography
+	"flake8-import-order" [label="flake8-import-order" color=black fillcolor=aliceblue style=filled]
+	cryptography -> "flake8-import-order"
+	pyenchant [label=pyenchant color=black fillcolor=aliceblue style=filled]
+	cryptography -> pyenchant
+	bcrypt [label=bcrypt color=black fillcolor=aliceblue style=filled]
+	cryptography -> bcrypt
+	"setuptools-rust" [label="setuptools-rust" color=black fillcolor=aliceblue style=filled]
+	cryptography -> "setuptools-rust"
+	"pep8-naming" [label="pep8-naming" color=black fillcolor=aliceblue style=filled]
+	cryptography -> "pep8-naming"
+	iso8601 [label=iso8601 color=black fillcolor=aliceblue style=filled]
+	cryptography -> iso8601
+	cffi [label=cffi color=black fillcolor=aliceblue style=filled]
+	cryptography -> cffi
+	black [label=black color=black fillcolor=aliceblue style=filled]
+	cryptography -> black
+	pytz [label=pytz color=black fillcolor=aliceblue style=filled]
+	cryptography -> pytz
+	twine [label=twine color=black fillcolor=aliceblue style=filled]
+	cryptography -> twine
+	enum34 [label=enum34 color=black fillcolor=antiquewhite style=filled]
+	"flake8-import-order" -> enum34
+	"semantic-version" [label="semantic-version" color=black fillcolor=aquamarine style=filled]
+	"setuptools-rust" -> "semantic-version"
+	tox [label=tox color=black fillcolor=blue style=filled]
+	"semantic-version" -> tox
+	"readme-renderer" [label="readme-renderer" color=black fillcolor=blue style=filled]
+	"semantic-version" -> "readme-renderer"
+	"check-manifest" [label="check-manifest" color=black fillcolor=blue style=filled]
+	"semantic-version" -> "check-manifest"
+	django [label=django color=black fillcolor=blue style=filled]
+	"semantic-version" -> django
+	nose2 [label=nose2 color=black fillcolor=blue style=filled]
+	"semantic-version" -> nose2
+	"zest.releaser" [label="zest.releaser" color=black fillcolor=blue style=filled]
+	"semantic-version" -> "zest.releaser"
+	py [label=py color=black fillcolor=blueviolet style=filled]
+	tox -> py
+	pathlib2 [label=pathlib2 color=black fillcolor=blueviolet style=filled]
+	tox -> pathlib2
+	"pygments-github-lexers" [label="pygments-github-lexers" color=black fillcolor=blueviolet style=filled]
+	tox -> "pygments-github-lexers"
+	psutil [label=psutil color=black fillcolor=blueviolet style=filled]
+	tox -> psutil
+	freezegun [label=freezegun color=black fillcolor=blueviolet style=filled]
+	tox -> freezegun
+	pluggy [label=pluggy color=black fillcolor=blueviolet style=filled]
+	tox -> pluggy
+	towncrier [label=towncrier color=black fillcolor=blueviolet style=filled]
+	tox -> towncrier
+	scandir [label=scandir color=black fillcolor=chartreuse style=filled]
+	pathlib2 -> scandir
+	typing [label=typing color=black fillcolor=chartreuse style=filled]
+	pathlib2 -> typing
+	wmi [label=wmi color=black fillcolor=chocolate style=filled]
+	psutil -> wmi
+	mock [label=mock color=black fillcolor=chocolate style=filled]
+	psutil -> mock
+	twine [label=twine color=black fillcolor=crimson style=filled]
+	wmi -> twine
+	pkginfo [label=pkginfo color=black fillcolor=cyan style=filled]
+	twine -> pkginfo
+	"readme-renderer" [label="readme-renderer" color=black fillcolor=cyan style=filled]
+	twine -> "readme-renderer"
+	rfc3986 [label=rfc3986 color=black fillcolor=cyan style=filled]
+	twine -> rfc3986
+	keyring [label=keyring color=black fillcolor=cyan style=filled]
+	twine -> keyring
+	nose [label=nose color=black fillcolor=violet style=filled]
+	pkginfo -> nose
+	docutils [label=docutils color=black fillcolor=gold style=filled]
+	"readme-renderer" -> docutils
+	bleach [label=bleach color=black fillcolor=gold style=filled]
+	"readme-renderer" -> bleach
+	cmarkgfm [label=cmarkgfm color=black fillcolor=gold style=filled]
+	"readme-renderer" -> cmarkgfm
+	tinycss2 [label=tinycss2 color=black fillcolor=green style=filled]
+	bleach -> tinycss2
+	hashin [label=hashin color=black fillcolor=green style=filled]
+	bleach -> hashin
+	black [label=black color=black fillcolor=green style=filled]
+	bleach -> black
+	webencodings [label=webencodings color=black fillcolor=green style=filled]
+	bleach -> webencodings
+	"pip-tools" [label="pip-tools" color=black fillcolor=green style=filled]
+	bleach -> "pip-tools"
+	webencodings [label=webencodings color=black fillcolor=hotpink style=filled]
+	tinycss2 -> webencodings
+	"pip-api" [label="pip-api" color=black fillcolor=magenta style=filled]
+	hashin -> "pip-api"
+	futures [label=futures color=black fillcolor=magenta style=filled]
+	hashin -> futures
+	pip [label=pip color=black fillcolor=orange style=filled]
+	"pip-api" -> pip
+	uvloop [label=uvloop color=black fillcolor=red style=filled]
+	black -> uvloop
+	"tokenize-rt" [label="tokenize-rt" color=black fillcolor=red style=filled]
+	black -> "tokenize-rt"
+	"mypy-extensions" [label="mypy-extensions" color=black fillcolor=red style=filled]
+	black -> "mypy-extensions"
+	aiohttp [label=aiohttp color=black fillcolor=red style=filled]
+	black -> aiohttp
+	click [label=click color=black fillcolor=red style=filled]
+	black -> click
+	"typed-ast" [label="typed-ast" color=black fillcolor=red style=filled]
+	black -> "typed-ast"
+	pathspec [label=pathspec color=black fillcolor=red style=filled]
+	black -> pathspec
+	platformdirs [label=platformdirs color=black fillcolor=red style=filled]
+	black -> platformdirs
+	cython [label=cython color=black fillcolor=pink style=filled]
+	uvloop -> cython
+	aiohttp [label=aiohttp color=black fillcolor=pink style=filled]
+	uvloop -> aiohttp
+	asynctest [label=asynctest color=black fillcolor=yellow style=filled]
+	aiohttp -> asynctest
+	cchardet [label=cchardet color=black fillcolor=yellow style=filled]
+	aiohttp -> cchardet
+	aiodns [label=aiodns color=black fillcolor=yellow style=filled]
+	aiohttp -> aiodns
+	"idna-ssl" [label="idna-ssl" color=black fillcolor=yellow style=filled]
+	aiohttp -> "idna-ssl"
+	brotli [label=brotli color=black fillcolor=yellow style=filled]
+	aiohttp -> brotli
+	"async-timeout" [label="async-timeout" color=black fillcolor=yellow style=filled]
+	aiohttp -> "async-timeout"
+	yarl [label=yarl color=black fillcolor=yellow style=filled]
+	aiohttp -> yarl
+	aiosignal [label=aiosignal color=black fillcolor=yellow style=filled]
+	aiohttp -> aiosignal
+	frozenlist [label=frozenlist color=black fillcolor=yellow style=filled]
+	aiohttp -> frozenlist
+	"charset-normalizer" [label="charset-normalizer" color=black fillcolor=yellow style=filled]
+	aiohttp -> "charset-normalizer"
+	multidict [label=multidict color=black fillcolor=yellow style=filled]
+	aiohttp -> multidict
+	pycares [label=pycares color=black fillcolor=aliceblue style=filled]
+	aiodns -> pycares
+	idna [label=idna color=black fillcolor=antiquewhite style=filled]
+	pycares -> idna
+	cffi [label=cffi color=black fillcolor=antiquewhite style=filled]
+	pycares -> cffi
+	pycparser [label=pycparser color=black fillcolor=deepskyblue style=filled]
+	cffi -> pycparser
+	multidict [label=multidict color=black fillcolor=blue style=filled]
+	yarl -> multidict
+	frozenlist [label=frozenlist color=black fillcolor=blueviolet style=filled]
+	aiosignal -> frozenlist
+	unicodedata2 [label=unicodedata2 color=black fillcolor=chartreuse style=filled]
+	"charset-normalizer" -> unicodedata2
+	proselint [label=proselint color=black fillcolor=violet style=filled]
+	platformdirs -> proselint
+	future [label=future color=black fillcolor=gold style=filled]
+	proselint -> future
+	secretstorage [label=secretstorage color=black fillcolor=magenta style=filled]
+	keyring -> secretstorage
+	"pywin32-ctypes" [label="pywin32-ctypes" color=black fillcolor=magenta style=filled]
+	keyring -> "pywin32-ctypes"
+	"jaraco.classes" [label="jaraco.classes" color=black fillcolor=magenta style=filled]
+	keyring -> "jaraco.classes"
+	jeepney [label=jeepney color=black fillcolor=magenta style=filled]
+	keyring -> jeepney
+	jeepney [label=jeepney color=black fillcolor=orange style=filled]
+	secretstorage -> jeepney
+	testpath [label=testpath color=black fillcolor=red style=filled]
+	jeepney -> testpath
+	async_generator [label=async_generator color=black fillcolor=red style=filled]
+	jeepney -> async_generator
+	trio [label=trio color=black fillcolor=red style=filled]
+	jeepney -> trio
+	sniffio [label=sniffio color=black fillcolor=yellow style=filled]
+	trio -> sniffio
+	exceptiongroup [label=exceptiongroup color=black fillcolor=yellow style=filled]
+	trio -> exceptiongroup
+	sortedcontainers [label=sortedcontainers color=black fillcolor=yellow style=filled]
+	trio -> sortedcontainers
+	"async-generator" [label="async-generator" color=black fillcolor=yellow style=filled]
+	trio -> "async-generator"
+	outcome [label=outcome color=black fillcolor=yellow style=filled]
+	trio -> outcome
+	"more-itertools" [label="more-itertools" color=black fillcolor=deepskyblue style=filled]
+	"jaraco.classes" -> "more-itertools"
+	blurb [label=blurb color=black fillcolor=aquamarine style=filled]
+	mock -> blurb
+	"pre-commit" [label="pre-commit" color=black fillcolor=blueviolet style=filled]
+	pluggy -> "pre-commit"
+	cfgv [label=cfgv color=black fillcolor=chartreuse style=filled]
+	"pre-commit" -> cfgv
+	identify [label=identify color=black fillcolor=chartreuse style=filled]
+	"pre-commit" -> identify
+	nodeenv [label=nodeenv color=black fillcolor=chartreuse style=filled]
+	"pre-commit" -> nodeenv
+	pyyaml [label=pyyaml color=black fillcolor=chartreuse style=filled]
+	"pre-commit" -> pyyaml
+	ukkonen [label=ukkonen color=black fillcolor=chocolate style=filled]
+	identify -> ukkonen
+	"click-default-group" [label="click-default-group" color=black fillcolor=violet style=filled]
+	towncrier -> "click-default-group"
+	jinja2 [label=jinja2 color=black fillcolor=violet style=filled]
+	towncrier -> jinja2
+	incremental [label=incremental color=black fillcolor=violet style=filled]
+	towncrier -> incremental
+	babel [label=babel color=black fillcolor=gold style=filled]
+	jinja2 -> babel
+	markupsafe [label=markupsafe color=black fillcolor=gold style=filled]
+	jinja2 -> markupsafe
+	pytz [label=pytz color=black fillcolor=green style=filled]
+	babel -> pytz
+	tzdata [label=tzdata color=black fillcolor=orange style=filled]
+	django -> tzdata
+	asgiref [label=asgiref color=black fillcolor=orange style=filled]
+	django -> asgiref
+	"argon2-cffi" [label="argon2-cffi" color=black fillcolor=orange style=filled]
+	django -> "argon2-cffi"
+	"backports.zoneinfo" [label="backports.zoneinfo" color=black fillcolor=orange style=filled]
+	django -> "backports.zoneinfo"
+	sqlparse [label=sqlparse color=black fillcolor=orange style=filled]
+	django -> sqlparse
+	dataclasses [label=dataclasses color=black fillcolor=pink style=filled]
+	"argon2-cffi" -> dataclasses
+	cogapp [label=cogapp color=black fillcolor=pink style=filled]
+	"argon2-cffi" -> cogapp
+	"argon2-cffi-bindings" [label="argon2-cffi-bindings" color=black fillcolor=pink style=filled]
+	"argon2-cffi" -> "argon2-cffi-bindings"
+	pyroma [label=pyroma color=black fillcolor=antiquewhite style=filled]
+	"zest.releaser" -> pyroma
+	"zope.testing" [label="zope.testing" color=black fillcolor=antiquewhite style=filled]
+	"zest.releaser" -> "zope.testing"
+	"zope.testrunner" [label="zope.testrunner" color=black fillcolor=antiquewhite style=filled]
+	"zest.releaser" -> "zope.testrunner"
+	"z3c.testsetup" [label="z3c.testsetup" color=black fillcolor=antiquewhite style=filled]
+	"zest.releaser" -> "z3c.testsetup"
+	pep440 [label=pep440 color=black fillcolor=antiquewhite style=filled]
+	"zest.releaser" -> pep440
+	"zope.testrunner" [label="zope.testrunner" color=black fillcolor=aquamarine style=filled]
+	"zope.testing" -> "zope.testrunner"
+	"zope.exceptions" [label="zope.exceptions" color=black fillcolor=aquamarine style=filled]
+	"zope.testing" -> "zope.exceptions"
+	"zope.interface" [label="zope.interface" color=black fillcolor=aquamarine style=filled]
+	"zope.testing" -> "zope.interface"
+	testtools [label=testtools color=black fillcolor=blue style=filled]
+	"zope.testrunner" -> testtools
+	"python-subunit" [label="python-subunit" color=black fillcolor=blue style=filled]
+	"zope.testrunner" -> "python-subunit"
+	"zope.exceptions" [label="zope.exceptions" color=black fillcolor=blue style=filled]
+	"zope.testrunner" -> "zope.exceptions"
+	"zope.interface" [label="zope.interface" color=black fillcolor=blue style=filled]
+	"zope.testrunner" -> "zope.interface"
+	testresources [label=testresources color=black fillcolor=blueviolet style=filled]
+	testtools -> testresources
+	extras [label=extras color=black fillcolor=blueviolet style=filled]
+	testtools -> extras
+	testscenarios [label=testscenarios color=black fillcolor=blueviolet style=filled]
+	testtools -> testscenarios
+	fixtures [label=fixtures color=black fillcolor=blueviolet style=filled]
+	testtools -> fixtures
+	pbr [label=pbr color=black fillcolor=blueviolet style=filled]
+	testtools -> pbr
+	"zope.interface" [label="zope.interface" color=black fillcolor=chartreuse style=filled]
+	"zope.exceptions" -> "zope.interface"
+	inflect [label=inflect color=black fillcolor=violet style=filled]
+	"jaraco.itertools" -> inflect
+	pydantic [label=pydantic color=black fillcolor=gold style=filled]
+	inflect -> pydantic
+	"email-validator" [label="email-validator" color=black fillcolor=green style=filled]
+	pydantic -> "email-validator"
+	"python-dotenv" [label="python-dotenv" color=black fillcolor=green style=filled]
+	pydantic -> "python-dotenv"
+	dnspython [label=dnspython color=black fillcolor=hotpink style=filled]
+	"email-validator" -> dnspython
+	httpx [label=httpx color=black fillcolor=magenta style=filled]
+	dnspython -> httpx
+	h2 [label=h2 color=black fillcolor=magenta style=filled]
+	dnspython -> h2
+	curio [label=curio color=black fillcolor=magenta style=filled]
+	dnspython -> curio
+	socksio [label=socksio color=black fillcolor=orange style=filled]
+	httpx -> socksio
+	httpcore [label=httpcore color=black fillcolor=orange style=filled]
+	httpx -> httpcore
+	h2 [label=h2 color=black fillcolor=orange style=filled]
+	httpx -> h2
+	h11 [label=h11 color=black fillcolor=red style=filled]
+	httpcore -> h11
+	h2 [label=h2 color=black fillcolor=red style=filled]
+	httpcore -> h2
+	anyio [label=anyio color=black fillcolor=red style=filled]
+	httpcore -> anyio
+	hyperframe [label=hyperframe color=black fillcolor=yellow style=filled]
+	h2 -> hyperframe
+	hpack [label=hpack color=black fillcolor=yellow style=filled]
+	h2 -> hpack
+	contextlib2 [label=contextlib2 color=black fillcolor=aliceblue style=filled]
+	anyio -> contextlib2
+	trustme [label=trustme color=black fillcolor=aliceblue style=filled]
+	anyio -> trustme
+	contextvars [label=contextvars color=black fillcolor=aliceblue style=filled]
+	anyio -> contextvars
+}

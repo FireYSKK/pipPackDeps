@@ -1,0 +1,50 @@
+digraph "aiohttp requirements" {
+	aiohttp [label=aiohttp color=black fillcolor=green style=filled]
+	brotli [label=brotli color=black fillcolor=aliceblue style=filled]
+	aiohttp -> brotli
+	aiodns [label=aiodns color=black fillcolor=aliceblue style=filled]
+	aiohttp -> aiodns
+	aiohttp -> attrs
+	cchardet [label=cchardet color=black fillcolor=aliceblue style=filled]
+	aiohttp -> cchardet
+	frozenlist [label=frozenlist color=black fillcolor=aliceblue style=filled]
+	aiohttp -> frozenlist
+	yarl [label=yarl color=black fillcolor=aliceblue style=filled]
+	aiohttp -> yarl
+	multidict [label=multidict color=black fillcolor=aliceblue style=filled]
+	aiohttp -> multidict
+	"async-timeout" [label="async-timeout" color=black fillcolor=aliceblue style=filled]
+	aiohttp -> "async-timeout"
+	"charset-normalizer" [label="charset-normalizer" color=black fillcolor=aliceblue style=filled]
+	aiohttp -> "charset-normalizer"
+	aiosignal [label=aiosignal color=black fillcolor=aliceblue style=filled]
+	aiohttp -> aiosignal
+	"idna-ssl" [label="idna-ssl" color=black fillcolor=aliceblue style=filled]
+	aiohttp -> "idna-ssl"
+	asynctest [label=asynctest color=black fillcolor=aliceblue style=filled]
+	aiohttp -> asynctest
+	"typing-extensions" [label="typing-extensions" color=black fillcolor=aliceblue style=filled]
+	aiohttp -> "typing-extensions"
+	pycares [label=pycares color=black fillcolor=antiquewhite style=filled]
+	aiodns -> pycares
+	cffi [label=cffi color=black fillcolor=deepskyblue style=filled]
+	pycares -> cffi
+	idna [label=idna color=black fillcolor=deepskyblue style=filled]
+	pycares -> idna
+	pycparser [label=pycparser color=black fillcolor=aquamarine style=filled]
+	cffi -> pycparser
+	"typing-extensions" [label="typing-extensions" color=black fillcolor=blue style=filled]
+	yarl -> "typing-extensions"
+	yarl -> idna
+	multidict [label=multidict color=black fillcolor=blue style=filled]
+	yarl -> multidict
+	"async-timeout" -> "typing-extensions"
+	unicodedata2 [label=unicodedata2 color=black fillcolor=chartreuse style=filled]
+	"charset-normalizer" -> unicodedata2
+	unicodedata2 -> pytest
+	coverage [label=coverage color=black fillcolor=chocolate style=filled]
+	unicodedata2 -> coverage
+	tomli [label=tomli color=black fillcolor=crimson style=filled]
+	coverage -> tomli
+	aiosignal -> frozenlist
+}
